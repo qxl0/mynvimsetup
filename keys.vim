@@ -22,6 +22,13 @@ nnoremap <leader>m :Marks<CR>
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
+" Tab management
+nnoremap tn :tabnew<Space>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tl :tablast<CR>
+
 
 " splits window size 
 nnoremap <silent><Leader>= :exe "resize " . (winheight(0) * 3/2)<CR>
@@ -53,7 +60,7 @@ nnoremap <A-l> <C-w>l
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
 
-" TAB in general mode will move to text buffer
+" buffers: TAB in general mode will move to text buffer
 nnoremap <silent> <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <silent> <S-TAB> :bprevious<CR>
@@ -63,6 +70,7 @@ nnoremap <silent> <S-TAB> :bprevious<CR>
 " shift + j to move down
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
+
 
 " Alternate way to save
 nnoremap <silent> <C-s> :w<CR>
