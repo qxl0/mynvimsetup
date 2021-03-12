@@ -28,10 +28,6 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 " telescope key bindings
 nnoremap <leader>ps  :lua require('telescope.builtin').grep_string({search=vim.fn.input("Grep For > ")})<CR>
-nmap <leader>ac <Plug>(coc-codeaction)
-" Apply AutoFix to problem on the current line.
-nmap <leader>qf <Plug>(coc-fix-current)
-
 
 
 let g:fzf_tags_command = 'ctags -R'

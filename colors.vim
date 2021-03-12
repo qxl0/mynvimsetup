@@ -5,7 +5,7 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-"colorscheme dracula
-colorscheme gruvbox
+colorscheme dracula
+"colorscheme gruvbox
 
 
