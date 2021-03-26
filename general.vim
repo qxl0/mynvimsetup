@@ -24,7 +24,7 @@ set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
 set updatetime=50
 set shortmess+=c
-
+set spell
 syntax on
 " Theme
 syntax enable
